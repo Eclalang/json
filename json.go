@@ -1,9 +1,11 @@
 package json
 
-import "encoding/json"
+import (
+	"encoding/json"
+)
 
 // Marshal returns the JSON encoding of a map
-func Marshal(content interface{}) string {
+func Marshal(content any) string {
 	contentByte, _ := json.Marshal(content)
 	return string(contentByte)
 }
