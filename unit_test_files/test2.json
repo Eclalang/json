@@ -1,12 +1,12 @@
 [
   {
     "name": "Ecla",
-    "members": 7,
+    "members": "7",
     "language": "Golang"
   },
   {
     "name": "Test",
-    "members": 12,
+    "members": "12",
     "language": "Python"
   }
 ]
