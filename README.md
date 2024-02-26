@@ -1,5 +1,8 @@
 # Json library
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/Eclalang/json)](https://goreportcard.com/report/github.com/Eclalang/json)
+[![codecov](https://codecov.io/gh/Eclalang/json/graph/badge.svg?token=YNCIYERVBO)](https://codecov.io/gh/Eclalang/json)
+
 ## Candidate functions :
 
 | Func Name |                                    Prototype                                     |                Description                 | Comments |
