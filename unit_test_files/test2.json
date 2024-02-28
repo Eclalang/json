@@ -1,12 +1,14 @@
 [
   {
     "name": "Ecla",
-    "members": "7",
-    "language": "Golang"
+    "members": 7,
+    "language": "Golang",
+    "check": true
   },
   {
     "name": "Test",
-    "members": "12",
-    "language": "Python"
+    "members": 12,
+    "language": "Python",
+    "check": true
   }
 ]
