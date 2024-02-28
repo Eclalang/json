@@ -5,7 +5,7 @@ import (
 )
 
 // Marshal returns the JSON encoding of a map
-func Marshal[JsonType map[string]string | []map[string]string](content JsonType) (string, error) {
+func Marshal[JsonType map[string]any | []map[string]any](content JsonType) (string, error) {
 	contentByte, err := json.Marshal(content)
 	if err != nil {
 		return "", err
@@ -16,14 +16,14 @@ func Marshal[JsonType map[string]string | []map[string]string](content JsonType)
 // Unmarshal returns the map representation of the JSON
 func Unmarshal(content string) (any, error) {
 	if content[0] == '[' {
-		var v []map[string]string
+		var v []map[string]any
 		err := json.Unmarshal([]byte(content), &v)
 		if err != nil {
 			return v, err
 		}
 		return v, nil
 	}
-	var v map[string]string
+	var v map[string]any
 	err := json.Unmarshal([]byte(content), &v)
 	if err != nil {
 		return v, err

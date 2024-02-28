@@ -1,5 +1,6 @@
 {
   "name": "Ecla",
-  "members": "7",
-  "language": "Golang"
+  "members": 7,
+  "language": "Golang",
+  "check": true
 }
